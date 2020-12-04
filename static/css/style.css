@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#title_box {
+  text-align: center;
+  background-image: url("/static/images/codeBackground.jpg");
+  color: white;
+  margin: 10px;
+  padding: 15px;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+#task {
+  margin: 10px;
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #c490d1;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+#random-clue {
+    margin: 10px;
+    padding: 15px;
+    border-style: solid;
+    background-color: #acacde;
+    border-color: #b8336a;
+    
+}
+
+#try-again {
+    text-align: center;
+}
+
+#binary {
+  margin: 10px;
+  padding: 50px;
+  background-color: #dbfff2;
+  font-size: 25px;
+  text-align: center;
+}
+
+#description {
+  font-size: 25px;
+}
+
+#clue {
+    font-size: 30px;
+    text-align: center;
+}
