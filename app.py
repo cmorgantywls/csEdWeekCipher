@@ -19,7 +19,7 @@ def index():
     model.rand_fact_list.append(rand_fact)
     print(model.rand_fact_list)
     # rand_fact = "Hello there"
-    rand_shift = random.randint(0, 24)
+    rand_shift = random.randint(1, 25)
     encoded_fact = model.encoder(rand_fact, rand_shift)
     print(encoded_fact)
     # print(rand_fact)
