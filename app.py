@@ -35,7 +35,7 @@ def index():
             next_clue = "Clue 6: The person who requested a vegetarian lunch will also present second."
             next_challenge_link = "https://binaryCSscavengerHunt.msshuman.repl.co"
             try_again = "YAY"
-            return "<h1>Correct!</h1> <h2>Your next clue is</h2> <p>Clue 4: Dulce used Python but his business wasn’t Chinatown Arcade.:</p> <a href='#'>Click for your next challenge</a>"
+            return "<h1>Correct!</h1> <h2>Your next clue is</h2> <p>Clue 4: Dulce used Python but his business wasn’t Chinatown Arcade.</p> <a href='https://cs4all-scavenger-hunt-2021.glitch.me/beautiful-tin/index.html'>Click for your next challenge</a>"
             # return render_template("results.html")
         else:
             print(rand_fact)
