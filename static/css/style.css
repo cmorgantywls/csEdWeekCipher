@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 
 body {
-  background-color: #f0f0f0;
+  background-image: url("/static/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -26,7 +28,7 @@ h3 {
   margin: 10px;
   margin-top: 20px;
   padding: 30px;
-  background-color: #c490d1;
+  background-color: #D2F268;
 }
 
 #form {
@@ -41,9 +43,10 @@ h3 {
     margin: 10px;
     padding: 15px;
     border-style: solid;
-    background-color: #acacde;
-    border-color: #b8336a;
-    
+    border-width: thick;
+    background-color: #DBD52D;
+    border-color: #EBA266;
+
 }
 
 #try-again {
@@ -59,10 +62,14 @@ h3 {
 }
 
 #description {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #clue {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
+}
+
+#hint{
+  font-size: 10px;
 }

@@ -1,36 +1,85 @@
 <html>
     <head>
-        <title>CS_Scavengers</title>
+        <!-- Thank you to Marisa Shuman at TYWLS Bronx for building the original version of this back in 2020! -->
+
+        <title>CS Ed Week 2021 | Task #4</title>
+
+        <!-- If you came looking for a clue, you're a smart cookie. 🍪-->
+
+        <!-- this is called a Caesar Cipher and is so named for the gentleman you see on the page - Julius Caesar, a famous Roman general and dictator.  -->
+
+        <!-- He used this method to encode messages so that if they were intercepted by the enemy, they could not be read without a specific key. 🔐-->
+
+        <!-- I can't tell you the key, but I bet if you Google 'Caesar Cipher' you will get instructions on how to solve one. -->
+
+        <meta name="description" content="The fourth task in the NYC CS4All Scavenger Hunt created for Computer Science Education Week.">
+        <meta name="author" content="CS4All NYC">
+
+        <meta property="og:title" content="CS Ed Week 2021 | Task #4">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="The fourth task in the NYC CS4All Scavenger Hunt created for Computer Science Education Week.">
+        <meta property="og:image" content="../static/images/CSforAll_transparent_3301x2550.png">
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
         <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <div id="title_box">
-            <h1>CS_Scavengers</h1>
-            <h3>Welcome to Challenge #4</h3>
+      <!-- nav bar-->
+      <div id="home button">
+        <a href="#"><h3>🏠</h3></a>
+      </div>
+
+      <div class="container">
+        <div class ="row" id="title_box">
+            <h1>CS4All CS Ed Week 2021 Scavenger Hunt</h1>
+            <h3>Task #4</h3>
         </div>
 
-        <div id="task">
-            <h1>Task:</h1>
-            <p id="description">A fun fact has been encoded below using a secret method! Determine what the fun fact is and submit it in the form. </p>
-            <p>If you are correct, you will see the next clue! </p>
-        </div>
-        <div id="random-clue">
-            <p>Your fun fact is:</p>
-            <p id="clue">{{encoded_fact}}</p>
-            <div id="form">
-                <form method="POST" action="/index">
-                    <input type="text" name="guess" placeholder="Enter the decoded fact"/>
-                    <input type="submit" value="Submit"/>
-                </form>
+        <div class="row">
+          <div class="col-6">
+            <img src="../static/images/caesar.png" width=400/>
+          </div>
+
+          <div class="col-6">
+            <div id="task">
+                <h1>Task:</h1>
+                <p id="description">A fun fact has been encoded below using a secret method! Determine what the fun fact is and submit it in the form. </p>
+                <p>If you are correct, you will see the next clue and task link!</p>
+                <p id="hint">Not sure where to start? Think about:</p>
+                <ul id="hint">
+                  <li>What are common letters that show up in English? Do you see any letters more than others here, that could be common letters in disguise?</li>
+                  <li>Every word has to have a vowel - can you figure out what is standing in for vowels in the code?</li>
+                  <li>English has letters that often show up together. Do you see any letter pairs that the cipher is disguising?</li>
+                  <li>There's a pattern. We promise!</li>
+                </ul>
             </div>
-            <div id="try-again">
-                <p>{{try_again}}</p>
+
+            <div id="random-clue">
+                <p>Your fun fact is:</p>
+                <p id="clue">{{encoded_fact}}</p>
+                <div id="form">
+                    <form method="POST" action="/index">
+                        <input type="text" name="guess" placeholder="Enter the decoded fact"/>
+                        <input type="submit" value="Submit"/>
+                    </form>
+                </div>
+                <div id="try-again">
+                    <p>{{try_again}}</p>
+                </div>
             </div>
+          </div>
+
         </div>
-        
+
+      </div>
 
 
-        
-        
+
+
     </body>
 </html>
